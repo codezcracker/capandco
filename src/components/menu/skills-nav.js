@@ -4,12 +4,12 @@ import 'react-circular-progressbar/dist/styles.css';
 
 
 const menuList = [
-	{ listName: 'Html', listUrl: '/tech-html', listProgress: '20', listColor: '#0db6fa' },
-	{ listName: 'CSS', listUrl: '/tech-css', listProgress: '30', listColor: '#ff0146' },
-	{ listName: 'JavaScript', listUrl: '/tech-javascript', listProgress: '40', listColor: '#fbc444' },
-	{ listName: 'ReactJS', listUrl: '/tech-reactjs', listProgress: '50', listColor: '#fb9052' },
-	{ listName: 'Android', listUrl: '/tech-android', listProgress: '60', listColor: '#f85465' },
-	{ listName: 'IOS', listUrl: '/tech-ios', listProgress: '90', listColor: '#1cd593' }
+	{ listName: 'Html', listUrl: '/tech-html', listProgress: '100', listColor: '#0db6fa' },
+	{ listName: 'CSS', listUrl: '/tech-css', listProgress: '100', listColor: '#ff0146' },
+	{ listName: 'JavaScript', listUrl: '/tech-javascript', listProgress: '100', listColor: '#fbc444' },
+	{ listName: 'ReactJS', listUrl: '/tech-reactjs', listProgress: '100', listColor: '#fb9052' },
+	{ listName: 'Android', listUrl: '/tech-android', listProgress: '100', listColor: '#f85465' },
+	{ listName: 'IOS', listUrl: '/tech-ios', listProgress: '100', listColor: '#1cd593' }
 ];
 
 const SkillsProgress = () => (
@@ -24,7 +24,6 @@ const SkillsProgress = () => (
 							styles={{ path:{ stroke: `${menuItem.listColor}`} }}
 						>
 							<strong style={`color:${menuItem.listColor}`}>{menuItem.listName}</strong>
-							<span style={`color:${menuItem.listColor}`}>{`${menuItem.listProgress}%`}</span>
 						</CircularProgressbarWithChildren>
 					</li>
 				))

@@ -18,10 +18,13 @@ const PortfolioNav = () => (
 			{
 				menuList.map(menuItem => (
 					<li key={menuItem.listName}>
-						<Link exact activeClassName="active" href={menuItem.listUrl}>
+						<a target="_blank" href={menuItem.listUrl}>
 							<img src={menuItem.listImage} />
-							<span>{menuItem.listName}</span>
-						</Link>
+							<div className="portfolio-holder">
+								<h3>{menuItem.listName}</h3>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi architecto at, beatae blanditiis dolorem dolores doloribus eaque.</p>
+							</div>
+						</a>
 					</li>
 				))
 			}

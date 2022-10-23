@@ -1,5 +1,5 @@
 #footer{
-	background-color: #f7f7f7;
+	background-color: $footerColorLight;
 	.holder{
 		max-width: 1200px;
 	}
@@ -41,12 +41,10 @@
 		}
 	}
 	.footer-top{
-		background-color: $themeColorLight;
 		padding: 50px 0 0;
 	}
 	.footer-middle{
 		text-align: center;
-		background-color: $themeColorLight;
 		padding: 20px;
 		li{
 			@include display(inline-block, top);
@@ -54,16 +52,14 @@
 		}
 		a{
 			display: block;
-			color: $themeColorDark;
+			color: $footerColorDark;
 			line-height: 36px;
 			height: 36px;
 			width: 36px;
 			text-align: center;
 			border-radius: 50%;
 			background-color: $whiteColor;
-			box-shadow: 0 3px 5px transparentize($blackColor, 0.7),
-									0 0 5px inset transparentize($blackColor, 0.2),
-									0 0 10px inset transparentize($blackColor, 0.9);
+			box-shadow: 0 3px 5px transparentize($blackColor, 0.7);
 			@include anim(0.5s);
 			padding: 7px;
 			&:hover{
@@ -72,7 +68,6 @@
 			}
 			svg{
 				@include responsive-image();
-				filter: drop-shadow(2px 4px 6px transparentize($blackColor, 0.2));
 			}
 		}
 	}
@@ -80,7 +75,7 @@
 		color: transparentize($whiteColor, 0.7);
 		@include font(16px, 20px);
 		text-align: center;
-		background-color: $themeColorDark;
+		background-color: $footerColorDark;
 		padding: 20px;
 		a{
 			color: $whiteColor;

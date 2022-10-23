@@ -1,5 +1,3 @@
-import PatternBg from '../../assets/images/hexa-shape.svg';
-
 import { FaHandPeace } from "react-icons/fa";
 import { FaUsers } from "react-icons/fa";
 import { FaAward } from "react-icons/fa";
@@ -16,10 +14,11 @@ const AchievementNav = () => (
 			{
 				menuList.map(menuItem => (
 					<li key={menuItem.listName}>
-						<img src={PatternBg} />
-						{menuItem.listIcon}
-						<span>{menuItem.listName}</span>
-						<span className="achievement-count">{menuItem.listCount}</span>
+						<div className="achievement-holder">
+							<i className="pattern-img">{menuItem.listIcon}</i>
+							<span className="achievement-name">{menuItem.listName}</span>
+							<span className="achievement-count">{menuItem.listCount}</span>
+						</div>
 					</li>
 				))
 			}

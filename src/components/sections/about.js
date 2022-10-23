@@ -1,6 +1,6 @@
 
 const About = () => (
-	<section id="about-section" className="fix-bg " style="background-image: url('../../assets/images/client.jpg')">
+	<section id="about-section" className="fix-bg about-section" style="background-image: url('../../assets/images/client.jpg')">
 		<div className="section-position">
 			<div className="section-table">
 				<div className="section-table-cell">
