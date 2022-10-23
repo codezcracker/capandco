@@ -1,0 +1,240 @@
+/*Calendar&Schedule page css start*/
+.logo-fill{
+	fill: $themeColorDark;
+}
+.holder{
+	max-width: $mainHolderWidth;
+	margin: 0 auto;
+	@include clearfix();
+}
+section{
+	position: relative;
+	min-height: 100vh;
+	background-attachment: scroll;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	z-index: 0;
+	&.normal-height{
+		min-height: 100%;
+	}
+	&.fix-bg{
+		background-attachment: fixed;
+	}
+	h1{
+		color: $whiteColor;
+		@include font(40px, 50px);
+		background-color: transparentize($themeColorDark, 0.2);
+		text-align: center;
+		padding: 10px;
+	}
+}
+.section-position{
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	z-index: 1;
+	.section-table{
+		display: table;
+		height: 100%;
+		width: 100%;
+	}
+	.section-table-cell{
+		display: table-cell;
+		text-align: center;
+		vertical-align: middle;
+	}
+	.section-table-data{
+		max-width: 1600px;
+		border-radius: 5px;
+		padding: 50px 30px;
+		margin: 0 auto;
+		&.with-bg{
+			box-shadow: 0 5px 20px transparentize($blackColor, 0.9);
+			background-color: transparentize($themeColorDark, 0.2);
+		}
+		h2{
+			color: $whiteColor;
+			@include font(50px, 60px);
+			margin: 0 0 25px;
+		}
+		p{
+			color: $whiteColor;
+			@include font(24px, 36px);
+		}
+	}
+}
+#side-navigation{
+	background-color: transparentize($whiteColor, 0.2);
+	box-shadow: 0 5px 20px transparentize($blackColor, 0.9);
+	border-radius: 20px;
+	padding: 5px 10px;
+	position: fixed;
+	top: 50%;
+	left: 0;
+	z-index: 9;
+	transform: translateY(-50%);
+	nav{
+		li{
+			margin: 7px 0;
+		}
+		a{
+			display: block;
+			background-color: transparentize($themeColorDark, 0.2);
+			font-size: 0;
+			height: 16px;
+			width: 16px;
+			border-radius: 50%;
+			cursor: pointer;
+			padding: 5px;
+			@include anim(0.2s);
+			&:hover{
+				transform: scale(1.2);
+				background-color: $whiteColor;
+				box-shadow: 0 1px 5px transparentize($blackColor, 0.8);
+			}
+			&.active{
+				transform: scale(1.2);
+				background-color: $whiteColor;
+				box-shadow: 0 1px 5px transparentize($blackColor, 0.8);
+				&:hover{
+					transform: scale(1.2);
+					background-color: $whiteColor;
+				}
+			}
+		}
+	}
+}
+
+.skills-progress-nav{
+	text-align: center;
+	li{
+		@include display(inline-block, top);
+		width: 25%;
+		padding: 50px;
+		svg{
+			.CircularProgressbar-path{
+				stroke: $themeColorDark;
+			}
+		}
+		strong{
+			display: block;
+			color: $themeColorDark;
+			@include font(30px, 34px);
+		}
+		span{
+			display: block;
+			color: $themeColorLight;
+			@include font(24px, 28px);
+		}
+	}
+}
+
+.portfolio-nav{
+	text-align: center;
+	padding: 50px 0;
+	li {
+		@include display(inline-block, top);
+		width: 25%;
+		padding: 30px;
+		a{
+			display: block;
+			position: relative;
+			height: 400px;
+			overflow: hidden;
+			border-radius: 5px;
+			box-shadow: 0 5px 15px transparentize($blackColor, 0.8);
+			@include anim(1s);
+			&:hover{
+				img{
+					object-position: bottom;
+				}
+			}
+		}
+		img{
+			display: block;
+			height: 100%;
+			width: 100%;
+			object-fit: cover;
+			object-position: top;
+			@include anim(1s);
+		}
+		span{
+			display: block;
+			color: $whiteColor;
+			@include font(18px, 22px);
+			background-color: transparentize($themeColorDark, 0.1);
+			min-height: 50px;
+			padding: 15px 5px;
+			@include anim(0.5s);
+			position: absolute;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			&:hover{
+				min-height: 100%;
+			}
+		}
+	}
+}
+
+
+.achievement-section{
+	background-color: $whiteColor;
+	.pattern-bg{
+		@include responsive-image();
+		transform: rotate(180deg);
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		z-index: -1;
+	}
+}
+.achievement-nav{
+	text-align: center;
+	padding: 50px 0;
+	li{
+		position: relative;
+		@include display(inline-block, top);
+		width: 25%;
+		padding: 30px;
+		img{
+			@include responsive-image();
+			filter: drop-shadow(2px 2px 8px rgba(0,0,0,0.2));
+		}
+		svg{
+			@include responsive-image();
+			color: transparentize($whiteColor, 0.6);
+			width: 100px;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+		}
+		.achievement-count{
+			color: $themeColorDark;
+			@include font(20px, 70px);
+			height: 76px;
+			width: 76px;
+			border-radius: 50%;
+			background-color: transparentize($whiteColor, 0.5);
+			border: 3px solid transparentize($whiteColor, 0.6);
+			position: absolute;
+			top: 50px;
+			left: 50%;
+			transform: translateX(-50%);
+		}
+	}
+}
+
+
+
+
+
+
+
+
+/*Calendar&Schedule page css end*/
