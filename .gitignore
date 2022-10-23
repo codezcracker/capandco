@@ -2,4 +2,3 @@ node_modules
 /build
 /*.log
 src/.DS_Store
-.idea/vcs.xml
