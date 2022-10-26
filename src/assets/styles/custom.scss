@@ -1,7 +1,5 @@
 /*Calendar&Schedule page css start*/
-.logo-fill{
-	fill: $themeColorDark;
-}
+
 .holder{
 	max-width: $mainHolderWidth;
 	margin: 0 auto;
@@ -27,6 +25,35 @@ section{
 		background-color: transparentize($themeColorDark, 0.2);
 		text-align: center;
 		padding: 10px;
+	}
+	.heading{
+		padding: 60px 20px 20px;
+		h2{
+			@include font(50px, 54px);
+			font-weight: bold;
+			margin: 0 0 20px;
+		}
+		p{
+			@include font(20px, 28px);
+		}
+		&.heading-light{
+			h2{
+				color: $whiteColor;
+				text-shadow: 0 -25px 2px transparentize($whiteColor, 0.95);
+			}
+			p{
+				color: $whiteColor;
+			}
+		}
+		&.heading-dark{
+			h2{
+				color: $themeColorDark;
+				text-shadow: 0 -25px 2px transparentize($themeColorDark, 0.95);
+			}
+			p{
+				color: $themeColorDark;
+			}
+		}
 	}
 }
 .section-position{
@@ -110,15 +137,13 @@ section{
 .about-section{
 	min-height: 600px;
 }
-.skill-section{
-}
 .skills-progress-nav{
 	text-align: center;
 	padding: 50px 0;
 	li{
 		@include display(inline-block, top);
-		width: 25%;
-		padding: 50px;
+		width: 16.66%;
+		padding: 20px;
 		svg{
 			.CircularProgressbar-path{
 				stroke: $themeColorDark;
@@ -138,7 +163,6 @@ section{
 }
 
 .portfolio-nav{
-	text-align: center;
 	padding: 50px 0;
 	li {
 		@include display(inline-block, top);
@@ -147,7 +171,7 @@ section{
 		a{
 			display: block;
 			position: relative;
-			height: 400px;
+			height: 500px;
 			overflow: hidden;
 			border-radius: 5px;
 			box-shadow: 0 5px 15px transparentize($blackColor, 0.8);
@@ -169,7 +193,7 @@ section{
 			display: block;
 			background-color: transparentize($themeColorDark, 0.1);
 			min-height: 50px;
-			padding: 15px 5px;
+			padding: 15px;
 			@include anim(0.5s);
 			position: absolute;
 			left: 0;
@@ -237,8 +261,138 @@ section{
 
 
 
+.keyfeatures-section{
+	background-color: #524bb8;
+}
+.keyfeatures-nav{
+	padding: 50px 0;
+	.keyfeatures-list{
+		position: relative;
+		@include display(inline-block, top);
+		width: 25%;
+		padding: 15px;
+		.keyfeatures-holder{
+			background-color: #4842a8;
+			box-shadow: 0 0 20px transparentize($blackColor, 0.9);
+			border-radius: 20px;
+			min-height: 400px;
+			padding: 20px;
+		}
+		.pattern-img{
+			@include responsive-image();
+			color: transparentize($whiteColor, 0.2);
+			width: 80px;
+			svg{
+				display: block;
+				height: 100%;
+				width: 100%;
+			}
+		}
+		.keyfeatures-name{
+			display: block;
+			color: $whiteColor;
+			@include font(28px, 32px);
+			margin: 30px 0 0;
+		}
+		.keyfeatures-paragraph{
+			display: block;
+			color: $whiteColor;
+			@include font(20px, 28px);
+			margin: 20px 0 0;
+		}
+	}
+}
 
 
+.offerServices-section{
+	text-align: center;
+	background-color: #f1f1f1;
+}
 
-
+.offer-services-holder{
+	text-align: center;
+	padding: 50px 0;
+	.offer-services-block{
+		@include display(inline-block, top);
+		width: 33.33%;
+		padding: 15px;
+	}
+	.offer-services-content{
+		position: relative;
+		text-align: left;
+		background-color: $whiteColor;
+		box-shadow: 0 10px 20px transparentize($blackColor, 0.9);
+		border-radius: 10px;
+		min-height: 300px;
+		padding: 30px 30px 120px;
+		.content-header{
+			overflow: hidden;
+			padding: 0 0 30px;
+			i{
+				float: left;
+				fill: $themeColorLight;
+				width: 32px;
+				margin: 0 10px 0 0;
+				svg{
+					@include responsive-image();
+				}
+			}
+			strong{
+				overflow: hidden;
+				color: $themeColorLight;
+				@include font(32px, 35px);
+			}
+		}
+		ul{
+			li{
+				position: relative;
+				padding: 10px 0 10px 50px;
+				i{
+					display: block;
+					width: 40px;
+					position: absolute;
+					top: 3px;
+					left: 0;
+					svg{
+						@include responsive-image();
+					}
+				}
+				span{
+					display: block;
+					overflow: hidden;
+					color: $blackColor;
+					@include font(20px, 25px);
+				}
+			}
+		}
+		.offerServices-name{
+			display: block;
+			color: $themeColorDark;
+			@include font(24px, 28px);
+		}
+		.offerServices-count{
+			display: block;
+			color: $themeColorDark;
+			@include font(50px, 54px);
+			padding: 10px 0;
+		}
+		.read-more-btn{
+			@include display(inline-block, top);
+			color: $whiteColor;
+			@include font(20px, 24px);
+			text-align: center;
+			border-radius: 10px;
+			background-color: $themeColorLight;
+			box-shadow: 0 10px 20px transparentize($blackColor, 0.9);
+			padding: 15px 20px;
+			position: absolute;
+			bottom: 30px;
+			left: 30px;
+			@include anim(0.2s);
+			&:hover{
+				background-color: $themeColorDark;
+			}
+		}
+	}
+}
 /*Calendar&Schedule page css end*/

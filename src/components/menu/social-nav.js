@@ -1,22 +1,22 @@
 import { Link } from 'preact-router/match';
 
 import {
-	FaTwitter,
-	FaFacebookF,
-	FaInstagram
-} from "react-icons/fa";
+	FbIcon,
+	InstagramIcon,
+	TwitterIcon
+} from "../../assets/icons/svgs-list";
 
 const menuList = [
 	{
-		socialIcon: <FaFacebookF />,
+		socialIcon: <FbIcon />,
 		socialUrl: 'https://facebook.com'
 	},
 	{
-		socialIcon: <FaInstagram />,
+		socialIcon: <InstagramIcon />,
 		socialUrl: 'https://instagram.com'
 	},
 	{
-		socialIcon: <FaTwitter />,
+		socialIcon: <TwitterIcon />,
 		socialUrl: 'https://twitter.com'
 	}
 ];

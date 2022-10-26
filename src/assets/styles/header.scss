@@ -20,6 +20,9 @@ header{
     svg{
       @include responsive-image();
     }
+    .logo-fill{
+      fill: $themeColorLight;
+    }
   }
 
   nav{

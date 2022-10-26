@@ -19,9 +19,10 @@ const SkillsProgress = () => (
 				menuList.map(menuItem => (
 					<li key={menuItem.listName}>
 						<CircularProgressbarWithChildren
-							strokeWidth={6}
+							background={true}
+							strokeWidth={10}
 							value={menuItem.listProgress}
-							styles={{ path:{ stroke: `${menuItem.listColor}`} }}
+							styles={{ background:{ fill: 'rgba(255,255,255,1)'}, path:{ stroke: `${menuItem.listColor}`} }}
 						>
 							<strong style={`color:${menuItem.listColor}`}>{menuItem.listName}</strong>
 						</CircularProgressbarWithChildren>

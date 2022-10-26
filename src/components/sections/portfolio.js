@@ -2,8 +2,11 @@ import PortfolioNav from "../menu/portfolio-nav";
 
 const Portfolio = () => (
 	<section id="portfolio-section" className="normal-height">
-		<h1>Portfolio</h1>
 		<div className="holder">
+			<div className="heading heading-dark">
+				<h2>Portfolio</h2>
+				<p>Services That We Deliver Makes Us Dignified As One of The Top App Development Companies.</p>
+			</div>
 			<PortfolioNav />
 		</div>
 	</section>

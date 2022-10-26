@@ -1,15 +1,10 @@
-import {Link} from "preact-router/match";
-import Image1 from '../../assets/images/Asset-3-100-2.jpeg';
-import Image2 from '../../assets/images/Asset-3-100-2.jpeg';
-import Image3 from '../../assets/images/Asset-3-100-2.jpeg';
-import Image4 from '../../assets/images/Asset-3-100-2.jpeg';
+import Image1 from '../../assets/images/regal.png';
+import Image2 from '../../assets/images/pammakeer.png';
 
 
 const menuList = [
-	{ listName: 'Regal', listUrl: 'http://www.google.com', listImage: Image1 },
-	{ listName: 'Pam Performance', listUrl: 'http://www.google.com', listImage: Image2 },
-	{ listName: 'Aed Miles', listUrl: 'http://www.google.com', listImage: Image3 },
-	{ listName: 'Fasion Citi', listUrl: 'http://www.google.com', listImage: Image4 },
+	{ listTitle: 'Regal', listParagraph:'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi architecto at, beatae blanditiis dolorem dolores doloribus eaque.', listUrl: 'http://www.google.com', listImage: Image1 },
+	{ listTitle: 'Pam Performance', listParagraph:'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi architecto at, beatae blanditiis dolorem dolores doloribus eaque.', listUrl: 'http://www.google.com', listImage: Image2 },
 ];
 
 const PortfolioNav = () => (
@@ -17,12 +12,12 @@ const PortfolioNav = () => (
 		<ul>
 			{
 				menuList.map(menuItem => (
-					<li key={menuItem.listName}>
+					<li key={menuItem.listTitle}>
 						<a target="_blank" href={menuItem.listUrl}>
 							<img src={menuItem.listImage} />
 							<div className="portfolio-holder">
-								<h3>{menuItem.listName}</h3>
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi architecto at, beatae blanditiis dolorem dolores doloribus eaque.</p>
+								<h3>{menuItem.listTitle}</h3>
+								<p>{menuItem.listParagraph}</p>
 							</div>
 						</a>
 					</li>

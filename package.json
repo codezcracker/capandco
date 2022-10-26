@@ -36,9 +36,11 @@
     "react-circular-progressbar": "^2.1.0",
     "react-icons": "^4.4.0",
     "react-scroll": "^1.8.7",
+    "react-slick": "^0.29.0",
     "react-tsparticles": "^2.3.3",
     "sass": "^1.55.0",
     "sass-loader": "^10.3.1",
+    "slick-carousel": "^1.8.1",
     "tsparticles": "^2.3.4"
   },
   "jest": {
