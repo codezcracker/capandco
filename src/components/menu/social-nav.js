@@ -4,7 +4,7 @@ import {
 	FbIcon,
 	InstagramIcon,
 	TwitterIcon
-} from "../../assets/icons/svgs-list";
+} from "../svgs-list";
 
 const menuList = [
 	{

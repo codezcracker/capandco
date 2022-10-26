@@ -11,7 +11,7 @@ import {
 	AppIcon,
 	WebAppIcon,
 	EcommerceIcon
-} from "../../assets/icons/svgs-list";
+} from "../svgs-list";
 
 const serviceContentList = [
 	{
