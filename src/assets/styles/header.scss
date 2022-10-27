@@ -28,6 +28,9 @@ header{
   nav{
     float: right;
     margin: 13px 0 0;
+    ul{
+      @include clearfix();
+    }
     li{
       float: left;
       margin: 0 5px;

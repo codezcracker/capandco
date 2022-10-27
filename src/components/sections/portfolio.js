@@ -1,7 +1,7 @@
 import PortfolioNav from "../menu/portfolio-nav";
 
 const Portfolio = () => (
-	<section id="portfolio-section" className="normal-height">
+	<section id="portfolio-section" className="portfolio-section normal-height">
 		<div className="holder">
 			<div className="heading heading-dark">
 				<h2>Portfolio</h2>

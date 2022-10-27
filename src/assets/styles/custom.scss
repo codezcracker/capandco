@@ -13,6 +13,7 @@ section{
 	background-size: cover;
 	background-position: center;
 	z-index: 0;
+	padding: 75px 0;
 	&.normal-height{
 		min-height: 100%;
 	}
@@ -27,7 +28,7 @@ section{
 		padding: 10px;
 	}
 	.heading{
-		padding: 60px 20px 20px;
+		padding: 0 0 20px;
 		h2{
 			@include font(50px, 54px);
 			font-weight: bold;
@@ -136,6 +137,16 @@ section{
 }
 .about-section{
 	min-height: 600px;
+	.section-table-data{
+		&.with-bg{
+			background-color: rgba(62, 117, 165, 0.9);
+		}
+	}
+}
+.skills-section{
+	.heading{
+		text-align: center;
+	}
 }
 .skills-progress-nav{
 	text-align: center;
@@ -162,11 +173,15 @@ section{
 	}
 }
 
+.portfolio-section{
+	.heading{
+		text-align: center;
+	}
+}
 .portfolio-nav{
-	padding: 50px 0;
 	li {
 		@include display(inline-block, top);
-		width: 25%;
+		width: 33.33%;
 		padding: 30px;
 		a{
 			display: block;
@@ -214,10 +229,12 @@ section{
 
 .achievement-section{
 	background-color: #f1f1f1;
+	.heading{
+		text-align: center;
+	}
 }
 .achievement-nav{
 	text-align: center;
-	padding: 50px 0;
 	li{
 		position: relative;
 		@include display(inline-block, top);
@@ -311,7 +328,6 @@ section{
 
 .offer-services-holder{
 	text-align: center;
-	padding: 50px 0;
 	.offer-services-block{
 		@include display(inline-block, top);
 		width: 33.33%;

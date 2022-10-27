@@ -1,5 +1,5 @@
 const Banner = () => (
-	<section id="banner-section" className="banner-image fix-bg" style="background-image: url('../../assets/images/background.jpg')" >
+	<section id="banner-section" className="banner-section fix-bg" style="background-image: url('../../assets/images/background.jpg')" >
 		<div className="section-position">
 			<div className="section-table">
 				<div className="section-table-cell">
