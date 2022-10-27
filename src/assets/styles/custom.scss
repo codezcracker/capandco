@@ -11,7 +11,7 @@
 section{
 	position: relative;
 	min-height: 100vh;
-	background-attachment: scroll;
+	background-attachment: fixed;
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
@@ -412,4 +412,15 @@ section{
 		}
 	}
 }
+
+
+@media not all and (min-resolution:.001dpcm){
+	section{
+		background-attachment: initial;
+		&.fix-bg{
+			background-attachment: initial;
+		}
+	}
+}
+
 /*Calendar&Schedule page css end*/
