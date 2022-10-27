@@ -326,8 +326,10 @@
 		}
 	}
 	.banner-section{
+		background-size: contain;
+		background-position: top;
 		min-height: auto;
-		padding: 0;
+		padding: 85px 0 0;
 	}
 	.portfolio-nav{
 		li{
