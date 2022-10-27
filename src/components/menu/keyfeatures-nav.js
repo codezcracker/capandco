@@ -23,7 +23,27 @@ var settings = {
 	infinite: true,
 	speed: 500,
 	slidesToShow: 4,
-	slidesToScroll: 1
+	slidesToScroll: 1,
+	responsive: [
+		{
+			breakpoint: 1377,
+			settings: {
+				slidesToShow: 3,
+			}
+		},
+		{
+			breakpoint: 1022,
+			settings: {
+				slidesToShow: 2,
+			}
+		},
+		{
+			breakpoint: 766,
+			settings: {
+				slidesToShow: 1,
+			}
+		},
+	]
 };
 
 const KeyFeaturesNav = () => (
