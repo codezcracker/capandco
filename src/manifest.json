@@ -1,20 +1,20 @@
 {
-  "name": "Sapte",
-  "short_name": "Sapte",
+  "name": "Cap & Co",
+  "short_name": "Capandco",
   "start_url": "/",
   "display": "standalone",
   "orientation": "portrait",
   "background_color": "#fff",
-  "theme_color": "gray",
+  "theme_color": "red",
   "icons": [
     {
-      "src": "/assets/icons/logo.svg",
-      "type": "image/svg",
+      "src": "/assets/icons/android-chrome-192x192.png",
+      "type": "image/png",
       "sizes": "192x192"
     },
     {
-      "src": "/assets/icons/logo.svg",
-      "type": "image/svg",
+      "src": "/assets/icons/android-chrome-512x512.png",
+      "type": "image/png",
       "sizes": "512x512"
     }
   ]
